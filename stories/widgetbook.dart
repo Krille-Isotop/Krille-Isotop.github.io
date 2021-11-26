@@ -26,7 +26,10 @@ class StoryBoard extends StatelessWidget {
               useCases: [
                 WidgetbookUseCase(
                   name: 'Default',
-                  builder: (context) => PizzaCard(),
+                  builder: (context) => const PizzaCard(
+                    type: "Vesuvio",
+                    price: 29,
+                  ),
                 ),
               ],
             ),
