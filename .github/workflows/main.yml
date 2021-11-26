@@ -3,7 +3,6 @@ name: CI
 on:
   pull_request:
     branches: [ main ]
-  workflow_dispatch:
 
 jobs:
   build:
@@ -12,15 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         name: Check out repository
-      - name: Figure out where we are
-        run: pwd
-      - name: Figure out whats here
-        run: ls
       - uses: subosito/flutter-action@v1.5.3
       - name: Build storybook application
         run: flutter build web -t stories/main.dart
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@4.1.6
         with:
-          branch: main
-          folder: build
+          branch: gh-pages
+          folder: build/web
