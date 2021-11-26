@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: subosito/flutter-action@v1.5.3
+      - name: Build storybook application
+        run: flutter build web -t stories/main.dart
