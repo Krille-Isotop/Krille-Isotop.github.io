@@ -10,10 +10,10 @@ const RESOURCES = {
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "b3877638398d1dd8cd0b1b9157003081",
-"index.html": "b969b3e250286851d4611e64205b671d",
-"/": "b969b3e250286851d4611e64205b671d",
-"assets/NOTICES": "4631da7dc9c3271eef15574539057367",
+"main.dart.js": "9b9db260192c044ad7d7fccb110eef9c",
+"index.html": "872ddc48974db201acc862e64b5b09a9",
+"/": "872ddc48974db201acc862e64b5b09a9",
+"assets/NOTICES": "1355a15c1a05b80cdd1f938cad09f77d",
 "assets/packages/widgetbook/google_fonts/Nunito-ExtraLight.ttf": "4470502486a612e2bf6f38d5bff77ce8",
 "assets/packages/widgetbook/google_fonts/Nunito-BoldItalic.ttf": "b21199decd37bf9a096e0f495bb20ffd",
 "assets/packages/widgetbook/google_fonts/Nunito-Light.ttf": "08bc5f85e4505782d3fa279944f2feab",
@@ -30,9 +30,10 @@ const RESOURCES = {
 "assets/packages/widgetbook/google_fonts/Nunito-Italic.ttf": "380d3172fab0055a8d74ab12636f5a9b",
 "assets/packages/widgetbook/google_fonts/Nunito-ExtraBoldItalic.ttf": "5f67429d0ff76ec74d98b915439692ee",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/AssetManifest.json": "0c5f7a0bfc6c0b07bba2f40bef653c80",
+"assets/AssetManifest.json": "cc9f88c2e938b853bdb889a55b86504e",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/FontManifest.json": "8050d51002fbcd0ec3de8c2d375192f7"
+"assets/FontManifest.json": "8050d51002fbcd0ec3de8c2d375192f7",
+"assets/assets/pizza.jpeg": "03db0eb2dda39f9f33d3b9e169daa5b1"
 };
 
 // The application shell files that are downloaded before a service worker can
