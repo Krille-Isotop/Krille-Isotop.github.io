@@ -1,4 +1,5 @@
 import 'package:pizzashop/presentation/ui/pizza_card.dart';
+import 'package:pizzashop/presentation/ui/text.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:flutter/material.dart';
 
@@ -36,15 +37,40 @@ class StoryBoard extends StatelessWidget {
           ],
           folders: [
             WidgetbookFolder(
-              name: 'Texts',
+              name: 'Text variants',
               widgets: [
                 WidgetbookWidget(
-                  name: 'Normal Text',
+                  name: 'Paragraph',
                   useCases: [
                     WidgetbookUseCase(
                       name: 'Default',
-                      builder: (context) => const Text(
-                        'This is just the regular old material text',
+                      builder: (context) => const Paragraph(
+                        'Campagnola, fiuggirola, quattro stagioni, marinara, capricciosa, kan inte låta bli',
+                      ),
+                    ),
+                    WidgetbookUseCase(
+                      name: 'Italic',
+                      builder: (context) => const Paragraph(
+                        'Campagnola, fiuggirola, quattro stagioni, marinara, capricciosa, kan inte låta bli',
+                        italic: true,
+                      ),
+                    ),
+                    WidgetbookUseCase(
+                      name: 'Upside down',
+                      builder: (context) => const Paragraph(
+                        'Campagnola, fiuggirola, quattro stagioni, marinara, capricciosa, kan inte låta bli',
+                        upsideDown: true,
+                      ),
+                    ),
+                  ],
+                ),
+                WidgetbookWidget(
+                  name: 'Heading',
+                  useCases: [
+                    WidgetbookUseCase(
+                      name: 'Default',
+                      builder: (context) => const Heading(
+                        'Canneloni macaroni',
                       ),
                     ),
                   ],

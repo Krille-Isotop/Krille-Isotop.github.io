@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizzashop/presentation/ui/text.dart';
 
 class PizzaCard extends StatelessWidget {
   final String type;
@@ -14,17 +15,17 @@ class PizzaCard extends StatelessWidget {
         width: 300,
         height: 300,
         margin: const EdgeInsets.symmetric(vertical: 20),
-        decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
+        decoration: BoxDecoration(border: Border.all(color: Colors.orange)),
         child: SizedBox(
             child: Column(children: [
           Image.asset("pizza.jpeg"),
           Padding(
             padding: const EdgeInsets.all(12.0),
-            child: Text(type),
+            child: Heading(type),
           ),
           Padding(
             padding: const EdgeInsets.all(12.0),
-            child: Text("${price.round()} kr"),
+            child: Paragraph("${price.round()} kr"),
           ),
           ElevatedButton(
               onPressed: () {
