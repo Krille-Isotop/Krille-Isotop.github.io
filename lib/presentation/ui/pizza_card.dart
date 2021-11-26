@@ -15,7 +15,7 @@ class PizzaCard extends StatelessWidget {
         width: 300,
         height: 300,
         margin: const EdgeInsets.symmetric(vertical: 20),
-        decoration: BoxDecoration(border: Border.all(color: Colors.orange)),
+        decoration: BoxDecoration(border: Border.all(color: Colors.green, width: 2)),
         child: SizedBox(
             child: Column(children: [
           Image.asset("pizza.jpeg"),

@@ -9,10 +9,6 @@ class StoryBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Widgetbook(
-      devices: const [
-        Apple.iPhone11,
-        Apple.iPhone12,
-      ],
       lightTheme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       appInfo: AppInfo(
