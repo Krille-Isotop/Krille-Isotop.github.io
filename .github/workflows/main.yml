@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Figure out where we are
+        run: pwd
+      - name: Figure out whats here
+        run: ls
       - uses: subosito/flutter-action@v1.5.3
       - name: Build storybook application
         run: flutter build web -t stories/main.dart
