@@ -19,3 +19,8 @@ jobs:
       - uses: subosito/flutter-action@v1.5.3
       - name: Build storybook application
         run: flutter build web -t stories/main.dart
+      - name: Deploy 
+        uses: JamesIves/github-pages-deploy-action@4.1.6
+        with:
+          branch: main
+          folder: build
