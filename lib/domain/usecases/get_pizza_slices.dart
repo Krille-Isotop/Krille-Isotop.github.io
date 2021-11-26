@@ -8,7 +8,7 @@ class GetPizzaSlicesUsecase implements UseCase<List<Pizza>, NoParams> {
   GetPizzaSlicesUsecase() : _pizzaRepository = StaticPizzaRepository();
 
   @override
-  Future<List<Pizza>> call(NoParams params) async {
+  List<Pizza> call(NoParams params) {
     return _pizzaRepository.pizzas;
   }
 }
